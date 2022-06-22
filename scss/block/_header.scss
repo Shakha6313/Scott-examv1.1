@@ -40,7 +40,7 @@
         font-weight: 700;
         font-size: 15px;
         line-height: 25px;
-        color: #939CAA;
+        color: $Dim_Grey;
 
         &:hover {
             color: $yellow;
@@ -57,9 +57,9 @@
         font-weight: 700;
         font-size: 15px;
         line-height: 25px;
-        color: #FFFFFF;
+        color: $white;
         padding: 14px 39px;
-        background: #FCB72B;
+        background: $yellow;
         min-width: 180px;
         max-width: 180px;
         width: 100%;
