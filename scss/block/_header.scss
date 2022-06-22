@@ -1,0 +1,169 @@
+.header {
+
+    padding-top: 34px;
+    padding-bottom: 34px;
+
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {}
+
+    &__logo-link {}
+
+    &__logo-img {
+        margin-right: 58px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        gap: 32px;
+
+
+    }
+
+    &__item {}
+
+    &__link {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+
+        &:hover {
+            color: $yellow;
+
+            &:active {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__btn {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        padding: 14px 39px;
+        background: #FCB72B;
+        min-width: 180px;
+        max-width: 180px;
+        width: 100%;
+
+        &:hover {
+            color: $yellow;
+            background: #fff;
+            box-shadow: 0 0 0 3px $yellow;
+
+            &:active {
+                opacity: 0.5;
+            }
+        }
+
+    }
+
+    &__burger {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 615px) {
+
+    .header {
+
+        &__logo-img {
+            margin-right: 0;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .header {
+        &__wrapper {
+            max-width: 550px;
+            width: 100%;
+            justify-content: center;
+            position: relative;
+
+
+        }
+
+        &__list {
+            display: block;
+            position: absolute;
+            top: calc(100% + 100px);
+        }
+
+        &__link {
+            display: block;
+        }
+
+        &__btn {
+            display: block;
+            flex-direction: column;
+            position: absolute;
+            top: calc(100% + 300px);
+            left: 0;
+        }
+
+        &__burger {
+
+            display: flex;
+            border: none;
+            outline: none;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        &__burger-gam {
+            position: absolute;
+            top: 8.5px;
+            left: 0;
+        }
+
+        &__burger-cross {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .header {
+
+        &__wrapper {
+            max-width: 375px;
+            width: 100%;
+            justify-content: center;
+
+        }
+
+        &__logo-img {
+            margin-right: 0;
+        }
+
+        &__wrapper>&__nav {
+            display: none;
+        }
+    }
+
+
+
+}
